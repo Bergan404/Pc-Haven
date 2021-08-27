@@ -13,7 +13,15 @@ This is the backend for the Flask React project.
 2. Install dependencies
 
       ```bash
+      *Once loaded up starter*
       pipenv install --dev -r dev-requirements.txt && pipenv install -r requirements.txt
+
+      pip install -r dev-requirements.txt && pip install -r requirements.txt
+
+      *in the reace-app terminal*
+      npm install
+
+      npm start
       ```
 
 3. Create a **.env** file based on the example with proper settings for your
