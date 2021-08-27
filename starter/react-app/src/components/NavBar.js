@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
+import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom';
 import LogoutButton from './auth/LogoutButton';
+import { allCpuData } from '../store/cpu';
 
 const NavBar = () => {
+  const dispatch = useDispatch()
+
+  useEffect(async () => {
+    await dispatch(allCpuData())
+  }, [dispatch])
+
   return (
     <nav>
       <ul>
