@@ -13,5 +13,5 @@ def main():
     cpu_data = api.retrieve("cpu")
     cpu_strings = cpu_data.query.all()
     return {"cpu": [cpu_string.to_dict() for cpu_string in cpu_strings]}
-    # return cpu_data
+
     print(cpu_data, "37473t634tr674t367t4367ft7346t74")
